@@ -1,0 +1,341 @@
+mean(data$steps)
+head(data)
+nrow(data)
+nrow(na.omit(data))
+data
+meanStepsByDay <- aggregate(steps ~ date, data=data, FUN=mean)
+meanStepsByDay
+meanStepsByDay <- aggregate(steps ~ date, data=data, FUN=mean)
+newData <- activity
+nrow(na.omit(newData))
+nrow(newData)
+newData$steps[is.na(newData$steps)]
+newData$steps[is.na(newData$steps),]
+newData[is.na(newData$steps),]
+test <- newData[is.na(newData$steps),]
+nrow(test)
+lapply(test, function(t) t$date)
+head(test)
+lapply(test, function(t) t$date)
+lapply(test, function(t) date)
+lapply(test, function(t) t)
+test
+head(test)
+lapply(test, function(t) t)
+head(lapply(test, function(t) t))
+for(t in test) { print (t)}
+for(t in test) { print (t$date)}
+class(test)
+apply(test, 1, function(t) { t$date})
+apply(test, 1, function(t, out) { t$date})
+apply(test, 1, function(t, out) { t})
+apply(test, 1, function(t, out) { t[1]})
+apply(test, 1, function(t, out) { t[2]})
+apply(test, 1, function(t, out) { t[3]})
+apply(test, 1, function(t) { t[3]})
+apply(test, 1, function(t) { t[3]})
+f <- function(x) {}
+f <- function(x) {}
+head(data)
+head(new)
+head(newData)
+meanStepsByDay
+head(newData)
+head(meanStepsByDay)
+meanStepsByDay['2012-10-02']
+meanStepsByDay[as.Date('2012-10-02')]
+meanStepsByDay[as.Date('2012-10-02'),]
+meanStepsByDay[2012-10-02,]
+meanStepsByDay['2012-10-02',]
+f <- function(x) {#
+   meanStepsByDay[x[1],]#
+}
+apply(test, 1, f)
+head(apply(test, 1, f))
+head(test)
+unique(test$date)
+head(meanStepsByDay)
+nahead(test)
+head(test)
+test[test$interval == 5,]
+f <- function(x) {#
+   meanStepsByDay[meanStepsByDay$date == x[1],]#
+}
+head(apply(test, 1, f))
+f <- function(x) {#
+   meanStepsByDay[meanStepsByDay$date == as.Date(x[1]),]#
+}
+head(apply(test, 1, f))
+head(meanStepsByDay)
+as.Date('2012-10-02')
+class(as.Date('2012-10-02'))
+test[0]
+test[1]
+test[1,]
+f(test[1,])
+class(test[1,])
+f(test[1,])
+f <- function(x) {#
+   meanStepsByDay[meanStepsByDay$date == as.Date(x[0]),]#
+}
+f(test[1,])
+f <- function(x) {#
+   x[1]#
+}
+f(test[1,])
+f <- function(x) {#
+   x[2]#
+}
+f(test[1,])
+f <- function(x) {#
+   meanStepsByDay[meanStepsByDay$date == as.Date(x[2),]#
+}
+f <- function(x) {#
+   meanStepsByDay[meanStepsByDay$date == as.Date(x[2],]#
+}
+f <- function(x) {#
+   meanStepsByDay[meanStepsByDay$date == as.Date(x[2]),]#
+}
+f(test[1,])
+f <- function(x) {#
+   meanStepsByDay[meanStepsByDay$date == x[2],]#
+}
+f(test[1,])
+f <- function(x) {#
+   class(x[2])#
+}
+f(test[1,])
+f <- function(x) {#
+   class(x[2])#
+   x[2]#
+}
+f(test[1,])
+f <- function(x) {#
+   class(x[2])#
+   x[2][1]#
+}
+f(test[1,])
+f <- function(x) {#
+   class(x[2])#
+   x[2,]#
+}
+f <- function(x) {#
+   class(x[2])#
+   x[2,]#
+}
+f(test[1,])
+f <- function(x) {#
+   class(x[2])#
+   x[,2]#
+}
+f(test[1,])
+f <- function(x) {#
+   class(x[2])#
+   x[,2]#
+   x$date#
+}
+f(test[1,])
+f <- function(x) {#
+   class(x[2])#
+#
+   x$date#
+}
+f <- function(x) {#
+   class(x[2])#
+#
+   x$date#
+}
+f(test[1,])
+f <- function(x) {#
+   meanStepsByDay[meanStepsByDay$date == x$date,]#
+}
+f(test[1,])
+f <- function(x) {#
+   meanStepsByDay[meanStepsByDay$date == x$date,]#
+   x$date#
+}
+f(test[1,])
+f <- function(x) {#
+   meanStepsByDay[meanStepsByDay$date == x$date,]#
+   class(x$date)#
+}
+f(test[1,])
+f <- function(x) {#
+   meanStepsByDay[meanStepsByDay$date == as.Date(x$date),]#
+}
+f(test[1,])
+f <- function(x) {#
+   meanStepsByDay[meanStepsByDay$date == x$date,]#
+   as.Date(x$date))#
+}
+f <- function(x) {#
+   meanStepsByDay[meanStepsByDay$date == x$date,]#
+   as.Date(x$date)#
+}
+f(test[1,])
+class(meanStepsByDay$date)
+meanStepsByDay[meanStepsByDay$date == as.Date("2012-10-01"),]
+meanStepsByDay[as.Date(meanStepsByDay$date) == as.Date("2012-10-01"),]
+meanStepsByDay[as.Date(meanStepsByDay$date) == as.Date("2012-10-01")]
+meanStepsByDay[,as.Date(meanStepsByDay$date) == as.Date("2012-10-01")]
+meanStepsByDay[meanStepsByDay$interval == 5]
+meanStepsByDay[meanStepsByDay$interval == 5,]
+head(meanStepsByDay)
+meanStepsByDay[meanStepsByDay$steps == 0.43750,]
+meanStepsByDay[meanStepsByDay$date == "2012-10-02",]
+f <- function(x) {#
+   meanStepsByDay[meanStepsByDay$date == "2012-10-02",]#
+}
+f(test[1,])
+f <- function(x) {#
+   meanStepsByDay[meanStepsByDay$date == x$date,]#
+}
+f(test[1,])
+f <- function(x) {#
+   meanStepsByDay[meanStepsByDay$date == toString(x$date),]#
+}
+f(test[1,])
+class(meanStepsByDay$date)
+class("2012-10-02")
+meanStepsByDay <- aggregate(steps ~ interval, data=data, FUN=mean)
+head(meanStepsByDay)
+f <- function(x) {#
+   meanStepsByDay[meanStepsByDay$interval == 5,]#
+}
+f(test[1,])
+f <- function(x) {#
+   meanStepsByDay[meanStepsByDay$interval == x$interval,]#
+}
+f(test[1,])
+f(test[1:10,])
+f(test)
+meanStepsByDay
+head(test)
+nrow(test)
+nrow(meanStepsByDay)
+unique(test$interval)
+nrow(test)
+f(test)
+newData
+newData$steps[is.na(newData$steps)]
+mean(data$steps)
+nrow(data)
+na.omit(data)
+nrow(na.omit(data))
+nrow(data)
+newData$steps[is.na(newData$steps)] <- mean(data$steps)
+newData$steps
+stepsByDay <- aggregate(steps ~ date, data=newData, FUN=sum)
+hist(stepsByDay$steps, main="Steps per day", xlab="Steps")
+nrow(newData)
+head(newData)
+weekdays(as.Date("2012-10-01")
+)
+weekdays(as.Date("2012-10-01")) %in% c("Saturday")
+weekdays(as.Date("2012-10-01")) %not in% c("Saturday")
+weekdays(as.Date("2012-10-01")) %not in% c("Saturday")
+newData$typeDay[weekdays(as.Date(newData$date))%in% c("Saturday", "Sunday")] <- "Weekend"
+newData$typeDay[!weekdays(as.Date(newData$date))%in% c("Saturday", "Sunday")] <- "Weekday"
+newData$typeDay
+as.factor(newData$typeDay)
+newData$typeDay <- as.factor(newData$typeDay)
+newData$typeDay
+stepByInterval <- aggregate(steps ~ interval + day, data=newData, FUN=mean)
+stepByInterval <- aggregate(steps ~ interval + typeDay, data=newData, FUN=mean)
+head(stepByInterval)
+library(ggplot2)
+ggplot(stepByInterval, aes(x=interval, y=steps, group=1)) + geom_line(colour="dodgerblue1") + facet_wrap(~ typeDay, ncol=1) + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), #
+    panel.background = element_blank(), axis.line = element_line(colour = "black"), strip.background = element_rect(fill="burlywood2"))
+ggplot(stepByInterval, aes(x=interval, y=steps, group=1)) + geom_line(colour="dodgerblue1") + facet_wrap(~ typeDay, ncol=1))
+ggplot(stepByInterval, aes(x=interval, y=steps, group=1)) + geom_line(colour="dodgerblue1") + facet_wrap(~ typeDay, ncol=1)
+ggplot(stepByInterval, aes(x=interval, y=steps, group=1)) + geom_line(colour="dodgerblue1")
+ggplot(stepByInterval, aes(x=interval, y=steps, group=1)) + geom_line(colour="dodgerblue1") + facet_wrap(~ typeDay, ncol=1)
+ggplot(stepByInterval, aes(x=interval, y=steps, group=1)) + geom_line(colour="dodgerblue1") + facet_wrap(~ typeDay, ncol=1) + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), #
+    panel.background = element_blank(), axis.line = element_line(colour = "black"), strip.background = element_rect(fill="burlywood2"))
+ggplot(stepByInterval, aes(x=interval, y=steps, group=1)) + geom_line(colour="dodgerblue1") + facet_wrap(~ typeDay, ncol=1) + theme( axis.line = element_line(colour = "black"), strip.background = element_rect(fill="burlywood2"))
+ggplot(stepByInterval, aes(x=interval, y=steps, group=1)) + geom_line(colour="dodgerblue1") + facet_wrap(~ typeDay, ncol=1) + theme(panel.background = element_blank(), axis.line = element_line(colour = "black"), strip.background = element_rect(fill="burlywood2"))
+ggplot(stepByInterval, aes(x=interval, y=steps, group=1)) + geom_line(colour="dodgerblue2") + facet_wrap(~ typeDay, ncol=1) + theme(panel.background = element_blank(), axis.line = element_line(colour = "black"), strip.background = element_rect(fill="burlywood1"))
+ggplot(stepByInterval, aes(x=interval, y=steps, group=1)) + geom_line(colour="dodgerblue2") + facet_wrap(~ typeDay, ncol=1) + theme(panel.background = element_blank(), axis.line = element_line(colour = "black"), strip.background = element_rect(fill="burlywood15"))
+ggplot(stepByInterval, aes(x=interval, y=steps, group=1)) + geom_line(colour="dodgerblue2") + facet_wrap(~ typeDay, ncol=1) + theme(panel.background = element_blank(), axis.line = element_line(colour = "black"), strip.background = element_rect(fill="burlywood2"))
+ggplot(stepByInterval, aes(x=interval, y=steps, group=1)) + geom_line(colour="dodgerblue2") + facet_wrap(~ typeDay, ncol=1) + theme(panel.background = element_blank(), axis.line = element_line(colour = "black"), strip.background = element_rect(fill="burlywood1"))
+new <- activity
+head(new)
+stepsByDay <- aggregate(steps ~ date, data=data, FUN=sum)
+head(stepsByDay)
+stepsByDay <- aggregate(steps ~ date, data=data, FUN=mean)
+head(stepsByDay)
+test <- head(new)
+test
+test$s
+test
+test$s <- NA
+test
+test$s[is.na(test$s)]
+test$s[is.na(test$s)] <- 1
+test
+test$s[is.na(test$s)] <- NA
+test
+test$s <- NA
+test
+head(stepsByDay)
+stepsByDay$date ==  as.Date("2012-10-02")
+stepsByDate$steps[stepsByDay$date ==  as.Date("2012-10-02")]
+stepsByDay$steps[stepsByDay$date ==  as.Date("2012-10-02")]
+stepsByDay$steps[stepsByDay$date ==  as.Date("2012-10-02")]
+class(stepsByDay$date)
+stepsByDay$steps[stepsByDay$date ==  "2012-10-02"]
+test$s <- stepsByDay$steps[stepsByDay$date ==  "2012-10-02"]
+test
+test$s <- NA
+test$s <- stepsByDay$steps[stepsByDay$date ==  test$s]
+class(s)
+class(test)
+f <- function(x) {#
+   x#
+}
+f(test)
+test
+f <- function(x) {#
+   x$date#
+}
+f(test)
+f(test[1,])
+f <- function(x) {#
+   stepsByDay[stepsByDay$date == x$date,]#
+}
+f(test[1,])
+f <- function(x) {#
+   class(x$date)#
+}
+f(test[1,])
+f <- function(x) {#
+   class(stepsByDay$date)#
+}
+f(test[1,])
+head(stepsByDay)
+test
+class(test$date)
+test$date <- "2012-10-02"
+class(test$date)
+test$date <- as.factor(test$date)
+class(test$date)
+f <- function(x) {#
+   stepsByDay[stepsByDay$date == x$date,]#
+}
+f(test[1,])
+f(test)
+test
+class(test$date)
+class(stepsByDay$date)
+test$date <- as.factor(stepsByDay$date)
+test$date <- "2012-10-02"
+test$date <- as.factor(stepsByDay$date)
+test <- activity
+test$date
+stepsByDay$date
+test$s <- NA
+head(test)
+f <- function(x) {#
+   stepsByDay[stepsByDay$date == x$date,]#
+}
+f(test)
