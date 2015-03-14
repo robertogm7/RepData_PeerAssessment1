@@ -65,13 +65,10 @@ nrow(activity[na,])
 ## [1] 2304
 ```
 
+Devise a strategy for filling in all of the missing values in the dataset. For this example, I used the mean of all the steps.
+
 ```r
 newData <- activity
-```
-
-Devise a strategy for filling in all of the missing values in the dataset. For this example, I use the mean of all the steps.
-
-```r
 newData$steps[is.na(newData$steps)] <- mean(data$steps)
 stepsByDay <- aggregate(steps ~ date, data=newData, FUN=sum)
 hist(stepsByDay$steps, main="Steps per day", xlab="Steps")
